@@ -1,1 +1,1 @@
-print("boynextdoor&mj")
+print("i love boynextdoor")
