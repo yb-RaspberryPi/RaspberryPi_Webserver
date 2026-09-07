@@ -1,2 +1,2 @@
 print("i love boynextdoor")
-print("i love mjh too")
+print("i love mjh, too")
