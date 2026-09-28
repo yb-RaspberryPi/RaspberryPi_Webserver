@@ -1,0 +1,24 @@
+from flask import Flask
+import config
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello_world():
+    return "Hello World!"
+
+@app.route("/hello/<name>")
+def hello(name):
+    return "Hello, " + name + "!"
+
+
+@app.route("/bnd")
+def hi():
+    return "bnd world"
+
+@app.route("/sum/<int:num1>/<int:num2>")
+def sum(num1, num2):
+    return "{3} + {5} = (num1+=num2)".format(sum1, sum2, sum1+sum2)
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=config.PORT, debug=True)
